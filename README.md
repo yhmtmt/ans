@@ -1,8 +1,21 @@
 # Autonomous Navigation System
 
-This autonomous navigation system is designed to guide marine vessels to their destination without human intervention. While various levels of autonomy exist, this system aims for the highest degree: it autonomously 1) detects and tracks obstacles, 2) plans the optimal path to the destination, and 3) controls the vessel along that path. Although still under development, its current precision allows for hands-free navigation even in busy marine traffic.
+**[日本語のREADMEはこちら](READM-jp.md)**
 
-To witness its capabilities, please watch these four short video clips of my boat autonomously avoiding other vessels, clearly demonstrating that I am not controlling it manually:
+This project showcases a field-proven autonomous navigation system for marine vessels. Developed over a decade of real-world testing, this system is designed to guide a boat to its destination while intelligently avoiding obstacles, even in dense maritime traffic.
+
+The video clips below are not simulations or cherry-picked highlights. They are excerpts from longer, unedited voyages that demonstrate the system's reliability and precision in real-time.
+
+## Key Features
+
+*   **Fully Autonomous Navigation:** The system handles obstacle detection, path planning, and vessel control from start to finish.
+*   **Real-World Reliability:** Proven through extensive, unedited long-distance voyages in busy waters.
+*   **Cost-Effective Design:** Built with readily available, off-the-shelf components, making it adaptable to a wide range of vessels.
+*   **Advanced Sensor Fusion:** Integrates data from radar, AIS, and GPS for robust situational awareness.
+
+## Demonstrations
+
+To witness the system's capabilities, please watch the four short video clips below. For those who may doubt the authenticity of these demonstrations, please note that each clip is an excerpt from a much longer, unedited voyage. The full, unedited videos are available on the same YouTube channel, providing verifiable proof of the system's real-world performance.
 
 [![Collision Avoidance: Distant Vessel in Open Water](https://img.youtube.com/vi/K0jlUjXqyp0/0.jpg)](https://youtu.be/K0jlUjXqyp0)
 
@@ -28,29 +41,7 @@ To witness its capabilities, please watch these four short video clips of my boa
 
 **Description:** During a fishing trip, the system encountered a square-shaped barge under tow. Due to the barge's unusual shape, the radar-based position and heading estimation fluctuated with distance, causing the system to hesitate momentarily as it recalculated the safest path. This clip highlights the challenge of tracking irregularly shaped objects.
 
-You might wonder if someone onboard is secretly controlling the boat, or if these clips are merely highlights from numerous attempts. The answer is no—this is real. What sets this system apart is that these clips are taken from longer, unedited videos of successful navigations, some of which clearly show me alone on the boat. I have uploaded the full, unedited versions to the same YouTube channel; feel free to verify this. Watching any of them will confirm that achieving such continuous success through repeated trials would be unrealistic. These video files were casually recorded during my weekend fishing trips.
-
-Many startups and research groups are actively developing autonomous marine navigation solutions. However, I have yet to see anyone demonstrate this level of capability with verifiable evidence. Promotional videos often rely on computer graphics, or they omit crucial context—for instance, obstacle information might be externally provided, the boat might simply be following a pre-programmed route, or only the best takes from many trials are shown. I am confident that my system represents a fundamentally different level of achievement: genuine, real-world autonomous navigation.
-
-# History
- In 2015, I began developing this autonomous navigation system on my personal boat, a YAMAHA YF-24 named AWS-1. For the past decade, this project has been a self-funded passion and a solitary hobby pursued alongside my fishing trips. (As such, this is entirely my private work, and I retain all rights, a fact recently verified by my employer.)
-
-Today, the system has achieved a level of maturity that makes it practical for real-world application. As evidence, I have uploaded numerous long, unedited videos demonstrating the boat successfully navigating the busy traffic of my local port without human intervention, even in relatively rough seas.
-
-I am now planning to scale up this project. If you are interested or have a proposal, please feel free to contact me.
-
-*   **July 2015:** Project started at Urayasu Marina.
-*   **February 2016:** Implemented electrical control of the rudder and engine throttle (using Jetson TK1 and Zedboard).
-*   **May 2016:** Achieved waypoint navigation with engine control.
-*   **April 2018:** Updated the autopilot and added remote control via Android Watch or phone (using Jetson TX1 and Zybo Z7).
-*   **November 2021:** Implemented radar-based collision avoidance (using Jetson AGX Xavier and Zybo Z7).
-*   **November 2022:** Developed a unified collision avoidance algorithm with a path planner.
-*   **August 2023:** Moved the project to Kisarazu Marina (an area with extremely dense boat traffic).
-*   **2023-2025:** Refined algorithms and uploaded many unedited YouTube videos of successful, unassisted runs through the Kisarazu Port.
-*   **March 2025:** Migrated the system to a more cost-effective setup using a Raspberry Pi 5 and Renesas RA8E1.
-*   **July 2025:** The entire development was officially verified as my private work by the Tokyo University of Marine Science and Technology (my current employer).
-
-# System Overview
+## System Overview
 
 The system is built upon a YAMAHA YF-24, utilizing standard marine equipment. A Marol actuator and helm pump facilitate control over the engine and rudder. For comprehensive situational awareness, the system integrates data from a GARMIN HD 18x Radar and a cost-effective AIS receiver. These components are interfaced with a Raspberry Pi 5 (8GB) via a Renesas RA8E1 microcontroller, which then executes the autonomous navigation software.
 
@@ -100,17 +91,35 @@ Currently, in open water, the system requires human intervention only once every
 
 The current system may not appear highly advanced, as it is installed on a standard 24ft boat and features a somewhat loud, exposed helm pump. However, this setup effectively demonstrates that the system can be retrofitted onto older, reliable boats that many people depend on. While it has only been tested on my YF-24 with my specific equipment, I believe the system could be adapted to other vessels, provided the necessary interfaces to the boat's existing equipment can be established. 
 
-# Source code
+## Project History
+ In 2015, I began developing this autonomous navigation system on my personal boat, a YAMAHA YF-24 named AWS-1. For the past decade, this project has been a self-funded passion and a solitary hobby pursued alongside my fishing trips. (As such, this is entirely my private work, and I retain all rights, a fact recently verified by my employer.)
+
+Today, the system has achieved a level of maturity that makes it practical for real-world application. As evidence, I have uploaded numerous long, unedited videos demonstrating the boat successfully navigating the busy traffic of my local port without human intervention, even in relatively rough seas.
+
+I am now planning to scale up this project. If you are interested or have a proposal, please feel free to contact me.
+
+*   **July 2015:** Project started at Urayasu Marina.
+*   **February 2016:** Implemented electrical control of the rudder and engine throttle (using Jetson TK1 and Zedboard).
+*   **May 2016:** Achieved waypoint navigation with engine control.
+*   **April 2018:** Updated the autopilot and added remote control via Android Watch or phone (using Jetson TX1 and Zybo Z7).
+*   **November 2021:** Implemented radar-based collision avoidance (using Jetson AGX Xavier and Zybo Z7).
+*   **November 2022:** Developed a unified collision avoidance algorithm with a path planner.
+*   **August 2023:** Moved the project to Kisarazu Marina (an area with extremely dense boat traffic).
+*   **2023-2025:** Refined algorithms and uploaded many unedited YouTube videos of successful, unassisted runs through the Kisarazu Port.
+*   **March 2025:** Migrated the system to a more cost-effective setup using a Raspberry Pi 5 and Renesas RA8E1.
+*   **July 2025:** The entire development was officially verified as my private work by the Tokyo University of Marine Science and Technology (my current employer).
+
+## Source Code
 
 The source code for this project is not currently public. An older version, last updated around 2020, can be found on my GitHub profile, but it does not reflect the system's current capabilities. I am in the process of preparing the codebase for a future release.
 
-# Links
+## Links
 
 *   **YouTube Channel:** [https://www.youtube.com/@yhmtmt/featured](https://www.youtube.com/@yhmtmt/featured)
 *   **GitHub:** [https://github.com/yhmtmt/](https://github.com/yhmtmt/)
 *   **Blog (2010-2018):** [http://blog.livedoor.jp/yhmtmt/](http://blog.livedoor.jp/yhmtmt/)
 
-# About Me
+## About Me
 
 <table>
   <tr>
@@ -124,7 +133,7 @@ The source code for this project is not currently public. An older version, last
   </tr>
 </table>
 
-# Contact Information
+## Contact Information
 
 Yohei Matsumoto  
 yhmtmt@gmail.com
