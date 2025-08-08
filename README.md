@@ -4,7 +4,29 @@ This autonomous navigation system is designed to guide marine vessels to their d
 
 To witness its capabilities, please watch these four short video clips of my boat autonomously avoiding other vessels, clearly demonstrating that I am not controlling it manually:
 
-<Here we have four YouTube links.>
+[![Collision Avoidance: Distant Vessel in Open Water](https://img.youtube.com/vi/K0jlUjXqyp0/0.jpg)](https://youtu.be/K0jlUjXqyp0)
+
+**Title:** Autonomous Collision Avoidance: Distant Vessel in Open Water
+
+**Description:** This video demonstrates typical collision avoidance at a distance. In open water, the autonomous navigation system plans a slightly adjusted course early on, so dramatic, last-minute maneuvers are rarely necessary. This makes capturing obvious avoidance actions on camera less common.
+
+[![AIS-Assisted Collision Avoidance: Tugboat at Port Entrance](https://img.youtube.com/vi/Kf-5UJ2-694/0.jpg)](https://youtu.be/Kf-5UJ2-694)
+
+**Title:** AIS-Assisted Collision Avoidance: Tugboat at Port Entrance
+
+**Description:** This video shows the system navigating past a tugboat at a port entrance amidst a strong wake. Because the tugboat has Class A AIS, its position is tracked with high precision by fusing AIS and radar data. While navigating such a narrow channel would typically require manual control, the enhanced accuracy from AIS fusion allows the autonomous system to confidently execute a safe, close pass.
+
+[![Navigating Heavy Traffic: Close Quarters with a Fishing Boat at Port Entrance](https://img.youtube.com/vi/Uqsw_XnjuP8/0.jpg)](https://youtu.be/Uqsw_XnjuP8)
+
+**Title:** Navigating Heavy Traffic: Close Quarters with a Fishing Boat at Port Entrance
+
+**Description:** At the busy port entrance, with numerous boats nearby, the system demonstrates intelligent speed control. It initially waits for a fishing boat approaching from behind to pass, as it exceeds the pre-configured speed limit for the area. Once the boat has passed, the system predicts its trajectory, smoothly accelerates, and precisely follows in its wake.
+
+[![Complex Collision Avoidance: Barge Under Tow](https://img.youtube.com/vi/0gb-SchXd7Q/0.jpg)](https://youtu.be/0gb-SchXd7Q)
+
+**Title:** Complex Collision Avoidance: Barge Under Tow
+
+**Description:** During a fishing trip, the system encountered a square-shaped barge under tow. Due to the barge's unusual shape, the radar-based position and heading estimation fluctuated with distance, causing the system to hesitate momentarily as it recalculated the safest path. This clip highlights the challenge of tracking irregularly shaped objects.
 
 You might wonder if someone onboard is secretly controlling the boat, or if these clips are merely highlights from numerous attempts. The answer is no—this is real. What sets this system apart is that these clips are taken from longer, unedited videos of successful navigations, some of which clearly show me alone on the boat. I have uploaded the full, unedited versions to the same YouTube channel; feel free to verify this. Watching any of them will confirm that achieving such continuous success through repeated trials would be unrealistic. These video files were casually recorded during my weekend fishing trips.
 
@@ -78,6 +100,9 @@ Currently, in open water, the system requires human intervention only once every
 
 The current system may not appear highly advanced, as it is installed on a standard 24ft boat and features a somewhat loud, exposed helm pump. However, this setup effectively demonstrates that the system can be retrofitted onto older, reliable boats that many people depend on. While it has only been tested on my YF-24 with my specific equipment, I believe the system could be adapted to other vessels, provided the necessary interfaces to the boat's existing equipment can be established. 
 
+# Source code
+
+The source code for this project is not currently public. An older version, last updated around 2020, can be found on my GitHub profile, but it does not reflect the system's current capabilities. I am in the process of preparing the codebase for a future release.
 
 # Links
 
