@@ -35,11 +35,11 @@ To witness the system's capabilities, please watch the four short video clips be
 
 **Description:** At the busy port entrance, with numerous boats nearby, the system demonstrates intelligent speed control. It initially waits for a fishing boat approaching from behind to pass, as it exceeds the pre-configured speed limit for the area. Once the boat has passed, the system predicts its trajectory, smoothly accelerates, and precisely follows in its wake.
 
-[![Complex Collision Avoidance: Barge Under Tow](https://img.youtube.com/vi/0gb-SchXd7Q/0.jpg)](https://youtu.be/0gb-SchXd7Q)
+[![Complex Collision Avoidance: Pushed Barge](https://img.youtube.com/vi/0gb-SchXd7Q/0.jpg)](https://youtu.be/0gb-SchXd7Q)
 
-**Title:** Complex Collision Avoidance: Barge Under Tow
+**Title:** Complex Collision Avoidance: Pushed Barge
 
-**Description:** During a fishing trip, the system encountered a square-shaped barge under tow. Due to the barge's unusual shape, the radar-based position and heading estimation fluctuated with distance, causing the system to hesitate momentarily as it recalculated the safest path. This clip highlights the challenge of tracking irregularly shaped objects.
+**Description:** During a fishing trip, the system encountered a square-shaped pushed barge. Due to the barge's unusual shape, the radar-based position and heading estimation fluctuated with distance, causing the system to hesitate momentarily as it recalculated the safest path. This clip highlights the challenge of tracking irregularly shaped objects.
 
 ## System Overview
 
