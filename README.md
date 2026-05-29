@@ -4,7 +4,7 @@
 
 This project showcases a field-proven autonomous navigation system for marine vessels. Developed over a decade of real-world testing, this system is designed to guide a boat to its destination while intelligently avoiding obstacles, even in dense maritime traffic.
 
-The video clips below are not simulations or cherry-picked highlights. They are excerpts from longer, unedited voyages that demonstrate the system's reliability and precision in real-time.
+The videos below are not simulations or cherry-picked highlights. They are excerpts from, or full recordings of, real voyages that demonstrate the system's reliability and precision in real-time.
 
 ## Key Features
 
@@ -17,7 +17,22 @@ The video clips below are not simulations or cherry-picked highlights. They are 
 
 ## Demonstrations
 
-To witness the system's capabilities, please watch the four short video clips below. For those who may doubt the authenticity of these demonstrations, please note that each clip is an excerpt from a much longer, unedited voyage. The full, unedited videos are available on the same YouTube channel, providing verifiable proof of the system's real-world performance.
+To witness the system's capabilities, please watch the long-form demo and four short video clips below. For those who may doubt the authenticity of these demonstrations, please note that the short clips are excerpts from much longer, unedited voyages. The full, unedited videos are available on the same YouTube channel, providing verifiable proof of the system's real-world performance.
+
+### Featured Long-Form Demo: 60 Minutes Without Human Intervention
+
+[![60-Minute Autonomous Navigation in Dense Maritime Traffic](https://img.youtube.com/vi/ZNDjxMICE9A/0.jpg)](https://youtu.be/ZNDjxMICE9A)
+
+**Title:** 60-Minute Autonomous Navigation in Dense Maritime Traffic
+
+**Highlights:**
+
+*   60 minutes of continuous autonomous navigation with no human intervention.
+*   Recorded in a crowded real-world maritime area, not in simulation.
+*   Demonstrates practical obstacle avoidance, speed control, and route following over an extended run.
+*   Shows the current maturity of the system beyond short selected clips.
+
+This is currently one of the clearest demonstrations of the system's real-world capability. Unlike short highlight videos, this long-form footage shows the system operating continuously in dense maritime traffic, where it must repeatedly observe surrounding vessels, predict their motion, adjust its route, and continue toward the destination without manual control.
 
 [![Collision Avoidance: Distant Vessel in Open Water](https://img.youtube.com/vi/K0jlUjXqyp0/0.jpg)](https://youtu.be/K0jlUjXqyp0)
 
