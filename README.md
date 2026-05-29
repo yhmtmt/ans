@@ -12,6 +12,8 @@ The video clips below are not simulations or cherry-picked highlights. They are 
 *   **Real-World Reliability:** Proven through extensive, unedited long-distance voyages in busy waters.
 *   **Cost-Effective Design:** Built with readily available, off-the-shelf components, making it adaptable to a wide range of vessels.
 *   **Advanced Sensor Fusion:** Integrates data from radar, AIS, and GPS for robust situational awareness.
+*   **Cloud-Based Operational Logs:** Voyage logs can be sealed, staged on an operator PC, and uploaded to cloud storage for later analysis, replay, and system improvement.
+*   **OTA Update Infrastructure:** The Raspberry Pi runtime can receive over-the-air software updates with version checks, artifact verification, and rollback support.
 
 ## Demonstrations
 
@@ -91,6 +93,10 @@ Currently, in open water, the system requires human intervention only once every
 
 The current system may not appear highly advanced, as it is installed on a standard 24ft boat and features a somewhat loud, exposed helm pump. However, this setup effectively demonstrates that the system can be retrofitted onto older, reliable boats that many people depend on. While it has only been tested on my YF-24 with my specific equipment, I believe the system could be adapted to other vessels, provided the necessary interfaces to the boat's existing equipment can be established. 
 
+The current system also includes an operational backend for long-term field testing. Log sessions generated on the boat can be sealed with checksums, transferred to an operator PC, and uploaded to cloud storage through a lightweight control plane. This makes it possible to preserve real-world sensor and navigation data after each voyage, replay sessions for debugging, and build a growing dataset for improving the autonomy stack.
+
+Software updates are handled through an OTA workflow. A small fixed device agent remains outside the replaceable runtime and can check for available releases, download signed update artifacts, apply the new runtime, run smoke checks, and roll back to the previous version when needed. This separation is important for a boat system: the recovery/update layer must remain stable even when the autonomous-navigation application itself is replaced.
+
 ## Project History
  In 2015, I began developing this autonomous navigation system on my personal boat, a YAMAHA YF-24 named AWS-1. For the past decade, this project has been a self-funded passion and a solitary hobby pursued alongside my fishing trips. (As such, this is entirely my private work, and I retain all rights, a fact recently verified by my employer.)
 
@@ -108,6 +114,7 @@ I am now planning to scale up this project. If you are interested or have a prop
 *   **2023-2025:** Refined algorithms and uploaded many unedited YouTube videos of successful, unassisted runs through the Kisarazu Port.
 *   **March 2025:** Migrated the system to a more cost-effective setup using a Raspberry Pi 5 and Renesas RA8E1.
 *   **July 2025:** The entire development was officially verified as my private work by the Tokyo University of Marine Science and Technology (my current employer).
+*   **2026:** Added cloud log upload and OTA update infrastructure, enabling long-term field-data collection, remote runtime updates, and safer recovery from failed software deployments.
 
 ## Source Code
 
